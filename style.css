@@ -1,0 +1,461 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Cairo:slnt,wght@-1,200..1000&family=Kalam:wght@300;400;700&family=Koulen&family=Laila:wght@300;400;500;600;700&family=Lalezar&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&family=Tajawal:wght@200;400&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --blue: #00b8b8;
+    --black: #333;
+    --white: #fff;
+    --light-bg: #eee;
+    --border: .2rem solid rgba(0,0,0,0.1);
+    --box-shadow: 0 .1rem .4rem rgba(0,0,0.01)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    outline: none;
+    text-decoration: none !important;
+    text-transform: capitalize;
+
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--blue);
+    border-radius: 13px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background: #00b8b895;
+}
+
+::-webkit-scrollbar-track{
+    background: var(--light-bg);
+}
+
+
+a.navbar-brand {
+    /* margin-right: 250px; */
+    font-weight: 400;
+}
+
+a.navbar-brand span{
+    color: var(--blue);
+}
+
+nav .btn{
+    background: #00b8b8;
+    color: var(--white);
+    border-radius: 1px;
+}
+
+nav .btn:hover{
+    border: 1px solid var(--blue);
+    }
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--bs-navbar-active-color);
+    color: var(--blue) !important;
+}
+
+.navbar-nav .nav-link{
+    color: black;
+}
+
+nav{
+    border-bottom: .1rem solid rgba(0,0,0,0.1);
+    box-shadow: 0 0 4px rgba(128, 128, 128, 0.612);
+}
+
+.nav-link.active{
+    color: var(--blue);
+}
+
+
+.main{
+    height: 92vh;
+    background: url(images/dentist-doing-check-up-patient.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 49px;
+}
+
+.main .container .main-text{
+padding-top: 150px;
+}
+
+.main .container .main-text .col-sm-12{
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.7rem;
+    letter-spacing: 2px;
+    font-weight: 400;
+    color: black;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: .9rem;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: var(--black);
+}
+
+.button .btn{
+    border-radius: 3px;
+    background: #00b8b8;
+    color: var(--white);
+    padding: 8px 25px;
+}
+
+.button .btn:hover{
+border: 1px solid var(--blue);
+}
+
+
+.col-md-8 {
+    margin-top: 60px;
+}
+
+
+
+.about .container {
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card.mb-3 {
+    border: none;
+}
+
+
+.card .btn{
+    background: #00b8b8;
+    color: var(--white);
+    border-radius: 3px;
+    padding: 8px 25px;
+}
+
+.card .btn:hover{
+    border: 1px solid var(--blue);
+}
+.card-body{
+    margin-top: 30px;
+}
+
+.about .card-title{
+    color: var(--blue);
+}
+
+.about .card-text{
+    color: #7c7c7c;
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.services{
+    background: var(--light-bg);
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+
+.services .container .title{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.services .card-body{
+    text-align: center;
+}
+
+.services .card-body img{
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.services .cards .card{
+    border-radius: 3px;
+    box-shadow: 3px 3px 3px rgba(137, 137, 137, 0.354);
+    transition: .3s;
+}
+
+.services .cards .card:hover{
+    background: #6ce3e34d;
+}
+.services .card-body p{
+font-size: .9rem;
+padding: 8px 12px;
+color: #4f4f4f;
+}
+
+.works .container .title{
+text-align: center;
+padding-bottom: 10px;
+padding-top: 60px;
+}
+
+.works .card{
+    background: #00b8b8;
+    border-radius: 2px;
+    height: 100px;
+    box-shadow: 0 0 2px 2px gray;
+}
+
+.works .card-body{
+    text-align: center;
+    color: var(--white);
+}
+
+.works .card-body img{
+max-width: 200px;
+height: 250px;
+margin-bottom: 30px;
+}
+
+.works .card-body .card-title{
+    padding-bottom: 5px;
+}
+
+.works .container .cards{
+    padding-bottom: 30px;
+}
+
+.review{
+    background: var(--light-bg);
+    padding-bottom: 30px;
+}
+
+.review .container .title{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 10px;
+}
+
+.review .card-body img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    }
+
+.review .card-body{
+        text-align: center;
+        color: black;
+    }
+
+    .review .card-text{
+        text-align: center;
+        color: var(--black);
+        padding: 10px;
+        min-height: 200px;
+    }
+
+.container .stars{
+        color: #00b8b8;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+.appointment{
+    padding-bottom: 50px;
+}
+    .appointment .container{
+        text-align: center;
+    }
+
+    .appointment .container .title{
+        padding-top: 60px;
+        padding-bottom: 10px;
+    }
+    .appointment .container .forms{
+        margin: auto;
+        background: var(--light-bg);
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    
+.container .forms p{
+width: 180px;
+margin-top: 20px;
+font-weight: 500;
+color: black;
+}
+
+.container .forms .name.last p{
+    width: 220px;
+    margin-top: 30px;
+    }
+
+    .name {
+        padding: 0;
+    }
+    .name input{
+        border: 1px solid var(--white);
+        width: 90%;
+        padding: 8px;
+        border-radius: 5px;
+    }
+
+    .appointment .container .button{
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 290px;
+    }
+
+
+
+    footer{
+        background: var(--light-bg);
+    }
+
+    .info{
+        border-bottom: 2px solid rgb(214, 205, 205);
+    }
+
+    .info .container {
+        display: flex;
+        /* padding-top: 10px; */
+        padding-bottom: 20px;
+    }
+
+    .info .cards{
+        text-align: center;
+    }
+
+    .cards .icon i{
+        color: #fff;
+        background: #00b8b8;
+        padding: 15px;
+        font-size: 1.2rem;
+        border-radius: 50%;
+        margin-top: 80px;
+    }
+
+    .cards .card-body h4{
+        font-size: 1rem;
+        color: black;
+    }
+
+    .cards .card-body p{
+        font-size: .9rem;
+        color: var(--black);
+    }
+
+    .copy{
+        text-align: center;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .copy p{
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    .copy span{
+        color: #00b8b8;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media(max-width: 550px){
+            .about .container {
+                padding: 20px 0px;
+                margin:auto;
+            }
+
+
+            a.navbar-brand {
+                margin-right: 20px;
+                font-weight: 400;
+            }
+
+            .navbar-nav .nav-link{
+                text-align: center;
+            }
+            nav .btn{
+                /* margin-left: 40px; */
+                width: 100%;
+            }
+
+            .main .container .main-text .title{
+                text-align: center;
+                }
+
+                .main .container .main-text .text{
+                    text-align: center;
+                    color: black;
+                    }
+
+                    .main .container .main-text .button{
+                        text-align: center;
+                        }
+
+                        .about .container {
+                            text-align: center;
+                        }
+
+                        .info .container {
+                            display: block;
+                        }
+              }
+
+              @media(min-width: 551px){
+                .info .container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+              }
+
+              @media(min-width: 991px){
+                .info .container {
+                    text-align: center;
+                    display: flex;
+                }
+              }
+
+            @media(min-width: 650px){
+                a.navbar-brand {
+                    margin-right: 250px;
+                    font-weight: 400;
+                };
+            }
